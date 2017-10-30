@@ -18,7 +18,9 @@ brew cask info this-is-somewhat-annoying 2>/dev/null
 # Homebrew casks
 casks=(
   # Applications
+  adobe-acrobat-reader
   authy
+  bittorrent
   docker
   dropbox
   firefox
@@ -26,14 +28,17 @@ casks=(
   gpgtools
   iterm2
   keybase
+  ngrok
   sequel-pro
   skype
   slack
   spotify
   steam
   sublime-text
+  tunnelblick
   vagrant
   vlc
+  zoomus
 )
 
 # Install Homebrew casks.
