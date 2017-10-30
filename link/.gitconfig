@@ -1,3 +1,7 @@
+[user]
+  name = Martins Sipenko
+  email = martins.sipenko@gmail.com
+
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
@@ -78,6 +82,9 @@
 			git commit --amend -m \"$(git log -1 --pretty=%B)\n\nCloses #$1.\"; \
 		fi \
 	}; f"
+
+	# Shorthand checkout
+	co = "checkout"
 
 [apply]
 
@@ -187,3 +194,7 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[url "git@heroku.com:"]
+
+  insteadOf = "heroku:"
