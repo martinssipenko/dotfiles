@@ -18,14 +18,20 @@ brew cask info this-is-somewhat-annoying 2>/dev/null
 # Homebrew casks
 casks=(
   # Applications
+  authy
   docker
   dropbox
   firefox
+  google-chrome
+  gpgtools
   iterm2
+  keybase
+  sequel-pro
   skype
   slack
   spotify
   steam
+  sublime-text
   vagrant
   virtualbox
   vlc
