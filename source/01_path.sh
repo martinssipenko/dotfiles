@@ -1,7 +1,7 @@
 paths=(
   ~/.local/bin
   $DOTFILES/bin
-  $HOME/bin
+  ~/bin
 )
 
 export PATH
