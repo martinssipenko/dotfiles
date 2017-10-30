@@ -33,7 +33,6 @@ casks=(
   steam
   sublime-text
   vagrant
-  virtualbox
   vlc
 )
 
