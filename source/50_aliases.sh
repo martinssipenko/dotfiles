@@ -11,8 +11,8 @@ alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias k="cd ~/src/kasko"
-alias s="cd ~/src"
 alias g="git"
+alias s="subl ."
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
