@@ -9,10 +9,15 @@ recipes=(
   awscli
   bash
   git
+  golang
+  heroku/brew/heroku
+  homebrew/homebrew-php/composer
   htop-osx
   jq
+  node
   tree
   wget
+  yarn
 )
 
 brew_install_recipes
