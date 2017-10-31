@@ -38,6 +38,7 @@ casks=(
   sublime-text
   tunnelblick
   vagrant
+  virtualbox
   vlc
   zoomus
 )
