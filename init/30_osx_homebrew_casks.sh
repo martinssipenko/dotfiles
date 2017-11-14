@@ -30,6 +30,7 @@ casks=(
   iterm2
   keybase
   ngrok
+  postman
   sequel-pro
   skype
   slack
