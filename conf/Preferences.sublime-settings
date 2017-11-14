@@ -103,7 +103,8 @@
 		"treehouse",
 		"Rekey",
 		"todo",
-		"failover"
+		"failover",
+		"Paypal"
 	],
 	"animation_enabled": false,
 	"bold_folder_labels": true,
@@ -119,7 +120,8 @@
 		".project",
 		".tags",
 		".tags_sorted_by_file",
-		".phptidy-cache"
+		".phptidy-cache",
+		".DS_Store"
 	],
 	"find_selected_text": true,
 	"font_size": 12,
