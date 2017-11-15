@@ -15,7 +15,9 @@ recipes=(
   htop-osx
   jq
   node
+  terraform
   tree
+  vault
   wget
   yarn
 )
