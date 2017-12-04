@@ -15,6 +15,7 @@ recipes=(
   htop-osx
   jq
   node
+  php72
   terraform
   tree
   vault
