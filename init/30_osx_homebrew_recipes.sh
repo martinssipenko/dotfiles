@@ -15,6 +15,7 @@ recipes=(
   htop-osx
   jq
   node
+  packer
   php72
   terraform
   tree
