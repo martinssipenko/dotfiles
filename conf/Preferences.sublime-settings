@@ -104,7 +104,12 @@
 		"Rekey",
 		"todo",
 		"failover",
-		"Paypal"
+		"Paypal",
+		"preload",
+		"plugin",
+		"wildcards",
+		"namespacing",
+		"unreviewed"
 	],
 	"animation_enabled": false,
 	"bold_folder_labels": true,

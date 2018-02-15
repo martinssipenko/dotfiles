@@ -24,8 +24,8 @@ casks=(
   docker
   dropbox
   firefox
-  google-backup-and-sync
   google-chrome
+  google-drive-file-stream
   gpgtools
   iterm2
   keybase
