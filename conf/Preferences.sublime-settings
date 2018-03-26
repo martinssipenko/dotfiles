@@ -109,7 +109,9 @@
 		"plugin",
 		"wildcards",
 		"namespacing",
-		"unreviewed"
+		"unreviewed",
+		"Configurator",
+		"fluentd"
 	],
 	"animation_enabled": false,
 	"bold_folder_labels": true,
