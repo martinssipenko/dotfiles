@@ -24,6 +24,7 @@ casks=(
   docker
   dropbox
   firefox
+  gitter
   google-chrome
   google-drive-file-stream
   gpgtools
