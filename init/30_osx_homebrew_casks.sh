@@ -20,7 +20,6 @@ casks=(
   # Applications
   adobe-acrobat-reader
   authy
-  bittorrent
   docker
   dropbox
   firefox
