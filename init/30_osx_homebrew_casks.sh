@@ -35,7 +35,6 @@ casks=(
   skype
   slack
   spotify
-  steam
   sublime-text
   tunnelblick
   vagrant
