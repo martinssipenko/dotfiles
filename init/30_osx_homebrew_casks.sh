@@ -23,6 +23,7 @@ casks=(
   docker
   dropbox
   firefox
+  gimp
   gitter
   google-chrome
   google-drive-file-stream
