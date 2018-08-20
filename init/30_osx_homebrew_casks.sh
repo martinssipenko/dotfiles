@@ -41,6 +41,7 @@ casks=(
   vagrant
   virtualbox
   vlc
+  whatsapp
   zoomus
 )
 
