@@ -14,6 +14,7 @@ recipes=(
   homebrew/homebrew-php/composer
   htop-osx
   jq
+  mysql-client
   node
   packer
   php72
