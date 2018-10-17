@@ -17,7 +17,7 @@ recipes=(
   mysql-client
   node
   packer
-  php72
+  php
   terraform
   tree
   vault
