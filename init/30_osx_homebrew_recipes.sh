@@ -20,6 +20,7 @@ recipes=(
   php
   terraform
   tree
+  unrar
   vault
   wget
   yarn
