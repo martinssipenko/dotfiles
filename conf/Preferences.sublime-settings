@@ -111,7 +111,9 @@
 		"namespacing",
 		"unreviewed",
 		"Configurator",
-		"fluentd"
+		"fluentd",
+		"underappreciated",
+		"prepend"
 	],
 	"animation_enabled": false,
 	"bold_folder_labels": true,
