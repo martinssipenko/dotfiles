@@ -113,7 +113,8 @@
 		"Configurator",
 		"fluentd",
 		"underappreciated",
-		"prepend"
+		"prepend",
+		"workflow"
 	],
 	"animation_enabled": false,
 	"bold_folder_labels": true,
