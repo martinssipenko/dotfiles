@@ -201,3 +201,6 @@
 [url "git@heroku.com:"]
 
   insteadOf = "heroku:"
+
+[include]
+    path = ~/src/kasko/dotfiles/.gitconfig
