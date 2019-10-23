@@ -2,6 +2,8 @@ paths=(
   ~/.local/bin
   $DOTFILES/bin
   ~/bin
+  # mysql client installed using Homebrew
+  /usr/local/opt/mysql-client/bin
 )
 
 export PATH
