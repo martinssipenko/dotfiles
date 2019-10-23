@@ -115,6 +115,7 @@
     untrackedCache = true
 
     editor = 'subl' --wait
+	pager = less -F -X
 
 [color]
 
