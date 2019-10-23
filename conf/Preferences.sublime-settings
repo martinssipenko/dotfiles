@@ -114,7 +114,10 @@
 		"fluentd",
 		"underappreciated",
 		"prepend",
-		"workflow"
+		"workflow",
+		"runtimes",
+		"typehints",
+		"Refactor"
 	],
 	"animation_enabled": false,
 	"bold_folder_labels": true,
