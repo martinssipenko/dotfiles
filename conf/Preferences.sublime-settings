@@ -123,7 +123,7 @@
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Phix Color Scheme/Phix Dark.tmTheme",
+	"color_scheme": "Packages/User/Tomorrow-Night.tmTheme",
 	"default_line_ending": "unix",
 	"detect_slow_plugins": false,
 	"drag_text": false,
@@ -160,6 +160,7 @@
 	"show_tab_close_buttons": false,
 	"soda_folder_icons": true,
 	"tab_size": 4,
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"wide_caret": false
