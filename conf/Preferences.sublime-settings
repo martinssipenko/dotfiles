@@ -117,7 +117,13 @@
 		"workflow",
 		"runtimes",
 		"typehints",
-		"Refactor"
+		"Refactor",
+		"changelog",
+		"bugfix",
+		"bugfixes",
+		"Redis",
+		"e2e",
+		"redis"
 	],
 	"animation_enabled": false,
 	"bold_folder_labels": true,
