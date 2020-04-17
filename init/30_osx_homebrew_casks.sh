@@ -6,9 +6,8 @@ is_osx || return 1
 
 # Ensure the cask kegs are installed.
 kegs=(
-  homebrew/cask-cask
-  homebrew/cask-drivers
-  homebrew/cask-fonts
+  homebrew/homebrew-cask-drivers
+  homebrew/homebrew-cask-fonts
 )
 brew_tap_kegs
 
