@@ -17,6 +17,7 @@ brew cask info this-is-somewhat-annoying 2>/dev/null
 # Homebrew casks
 casks=(
   # Applications
+  1password
   adobe-acrobat-reader
   authy
   docker
