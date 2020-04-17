@@ -24,7 +24,7 @@ casks=(
   firefox
   google-chrome
   google-drive-file-stream
-  gpgtools
+  gpg-suite
   keybase
   ngrok
   postman
