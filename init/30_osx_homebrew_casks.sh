@@ -22,19 +22,14 @@ casks=(
   docker
   dropbox
   firefox
-  gimp
-  gitter
   google-chrome
   google-drive-file-stream
   gpgtools
-  iterm2
   keybase
   ngrok
   postman
   sequel-pro
-  skype
   slack
-  spotify
   sublime-text
   tunnelblick
   vagrant
