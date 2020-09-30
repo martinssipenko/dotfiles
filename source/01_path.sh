@@ -4,6 +4,7 @@ paths=(
   ~/bin
   # mysql client installed using Homebrew
   /usr/local/opt/mysql-client/bin
+  ~/.composer/vendor/bin/
 )
 
 export PATH
