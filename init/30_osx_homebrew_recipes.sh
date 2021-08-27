@@ -11,16 +11,13 @@ recipes=(
   git
   golang
   heroku/brew/heroku
-  homebrew/homebrew-php/composer
   htop-osx
   jq
   mysql-client
   node
   packer
-  php
   terraform
   tree
-  unrar
   vault
   wget
   yarn
