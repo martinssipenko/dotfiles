@@ -150,7 +150,7 @@
 	"ignored_packages":
 	[
 		"Open-Include",
-		"Vintage"
+		"Vintage",
 	],
 	"index_exclude_patterns":
 	[
@@ -168,8 +168,8 @@
 	"show_tab_close_buttons": false,
 	"soda_folder_icons": true,
 	"tab_size": 4,
-	"theme": "Default.sublime-theme",
+	"theme": "Default Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"wide_caret": false
+	"wide_caret": false,
 }

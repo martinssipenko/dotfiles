@@ -29,7 +29,6 @@ casks=(
   keybase
   ngrok
   postman
-  sequel-pro
   slack
   sublime-text
   tunnelblick
@@ -37,7 +36,7 @@ casks=(
   virtualbox
   vlc
   whatsapp
-  zoomus
+  zoom
 )
 
 # Install Homebrew casks.
@@ -45,9 +44,9 @@ casks=($(setdiff "${casks[*]}" "$(brew cask list 2>/dev/null)"))
 if (( ${#casks[@]} > 0 )); then
   e_header "Installing Homebrew casks: ${casks[*]}"
   for cask in "${casks[@]}"; do
-    brew cask install $cask
+    brew install --cask $cask
   done
-  brew cask cleanup
+  brew cleanup
 fi
 
 # Work around colorPicker symlink issue.
