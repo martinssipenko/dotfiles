@@ -202,7 +202,5 @@
 
   insteadOf = "heroku:"
 
-[include]
-    path = ~/src/kasko/dotfiles/.gitconfig
 [pull]
 	rebase = false

@@ -21,20 +21,21 @@ casks=(
   adobe-acrobat-reader
   authy
   docker
-  dropbox
-  firefox
+  # dropbox
+  # firefox
   google-chrome
   google-drive-file-stream
   gpg-suite
   keybase
+  messenger
   ngrok
   postman
   slack
   sublime-text
-  tunnelblick
-  vagrant
-  virtualbox
-  vlc
+  # tunnelblick
+  # vagrant
+  # virtualbox
+  # vlc
   whatsapp
   zoom
 )

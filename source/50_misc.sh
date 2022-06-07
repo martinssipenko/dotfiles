@@ -1,3 +1,5 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
