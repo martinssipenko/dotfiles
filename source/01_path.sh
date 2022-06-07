@@ -2,6 +2,7 @@ paths=(
   ~/.local/bin
   $DOTFILES/bin
   ~/bin
+  /usr/local/sbin
   # mysql client installed using Homebrew
   /usr/local/opt/mysql-client/bin
   ~/.composer/vendor/bin/

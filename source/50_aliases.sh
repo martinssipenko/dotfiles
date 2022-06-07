@@ -91,3 +91,7 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+alias php74='brew unlink php && brew link --overwrite --force shivammathur/php/php@7.4 && php --version'
+alias php80='brew unlink php && brew link --overwrite --force shivammathur/php/php@8.0 && php --version'
+alias php81='brew unlink php && brew link --overwrite --force shivammathur/php/php@8.1 && php --version'
