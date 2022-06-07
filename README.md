@@ -6,7 +6,7 @@
 
 ```sh
 # Clone this repo
-git clone git://github.com/martinssipenko/dotfiles.git ~/.dotfiles
+git clone git@github.com:martinssipenko/dotfiles.git ~/.dotfiles
 
 # Run init
 ~/.dotfiles/bin/dotfiles
