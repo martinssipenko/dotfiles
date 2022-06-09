@@ -27,10 +27,10 @@ casks=(
   google-drive-file-stream
   gpg-suite
   keybase
-  messenger
+  # messenger
   ngrok
   postman
-  slack
+  # slack
   sublime-text
   # tunnelblick
   # vagrant

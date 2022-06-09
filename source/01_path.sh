@@ -1,4 +1,5 @@
 paths=(
+  /Applications/Sublime Text.app/Contents/SharedSupport/bin
   ~/.local/bin
   $DOTFILES/bin
   ~/bin
