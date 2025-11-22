@@ -2,6 +2,11 @@
   name = Martins Sipenko
   email = martins.sipenko@gmail.com
 
+[includeIf "gitdir:~/kitt-cli-data/"]
+    path = .gitconfig-work
+[includeIf "gitdir:~/src/printify/"]
+    path = .gitconfig-work
+
 [alias]
 
     # View abbreviated SHA, description, and history graph of the latest 20 commits
@@ -64,27 +69,19 @@
     # a.k.a. ‘delete merged’
     dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 
+    pb = "!git branch | grep -v 'master\\|main\\|keep-' | xargs -n 1 git branch -D && git remote prune origin"
+
+    m = "!git checkout $(git branch --list "master" "main" | sed 's/^..//')"
+
     # List contributors with number of commits
     contributors = shortlog --summary --numbered
 
-    # Merge GitHub pull request on top of the current branch or,
-    # if a branch name is specified, on top of the specified branch
-    mpr = "!f() { \
-        declare currentBranch=\"$(git symbolic-ref --short HEAD)\"; \
-        declare branch=\"${2:-$currentBranch}\"; \
-        if [ $(printf \"%s\" \"$1\" | grep '^[0-9]\\+$' > /dev/null; printf $?) -eq 0 ]; then \
-            git fetch origin refs/pull/$1/head:pr/$1 && \
-            git checkout -B $branch && \
-            git rebase $branch pr/$1 && \
-            git checkout -B $branch && \
-            git merge pr/$1 && \
-            git branch -D pr/$1 && \
-            git commit --amend -m \"$(git log -1 --pretty=%B)\n\nCloses #$1.\"; \
-        fi \
-    }; f"
+    undo = "reset --soft HEAD~1"
 
     # Shorthand checkout
     co = "checkout"
+
+    fpr = !sh -c 'git fetch ${2:-origin} +refs/pull/$1/head:refs/remotes/${2:-origin}/pr/$1 && git checkout pr/$1' -
 
 [apply]
 
@@ -168,13 +165,10 @@
     log = true
 
 [push]
-
-    # Use the Git 1.x.x default to avoid errors on machines with old Git
-    # installations. To use `simple` instead, add this to your `~/.extra` file:
-    # `git config --global push.default simple`. See http://git.io/mMah-w.
-    default = matching
+    default = upstream
+    autoSetupRemote = true
     # Make `git push` push relevant annotated tags when pushing branches out.
-    followTags = true
+    # followTags = true
 
 # URL shorthands
 
@@ -204,3 +198,12 @@
 
 [pull]
 	rebase = false
+
+[init]
+	defaultBranch = main
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

@@ -9,7 +9,6 @@ alias -- -="cd -"
 # Shortcuts
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/src/printify"
 alias g="git"
 
 # Detect which `ls` flavor is in use
@@ -67,8 +66,8 @@ command -v md5sum > /dev/null || alias md5sum="md5"
 # macOS has no `sha1sum`, so use `shasum` as a fallback
 command -v sha1sum > /dev/null || alias sha1sum="shasum"
 
-# Trim new lines and copy to clipboard
-alias c="tr -d '\n' | pbcopy"
+# Copy to clipboard
+alias c="pbcopy"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
@@ -81,16 +80,30 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 # URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
-# Lock the screen (when going AFK)
-alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec ${SHELL} -l"
-
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
-alias php74='brew unlink php && brew link --overwrite --force shivammathur/php/php@7.4 && php --version'
-alias php80='brew unlink php && brew link --overwrite --force shivammathur/php/php@8.0 && php --version'
-alias php81='brew unlink php && brew link --overwrite --force shivammathur/php/php@8.1 && php --version'
+alias php80='export PATH="/opt/homebrew/opt/php@8.0/bin/:$(echo $PATH | tr ":" "\n" | grep -v "/opt/homebrew/opt/php" | tr "\n" ":")" && php -v'
+alias php81='export PATH="/opt/homebrew/opt/php@8.1/bin/:$(echo $PATH | tr ":" "\n" | grep -v "/opt/homebrew/opt/php" | tr "\n" ":")" && php -v'
+alias php82='export PATH="/opt/homebrew/opt/php@8.2/bin/:$(echo $PATH | tr ":" "\n" | grep -v "/opt/homebrew/opt/php" | tr "\n" ":")" && php -v'
+alias php83='export PATH="/opt/homebrew/opt/php@8.3/bin/:$(echo $PATH | tr ":" "\n" | grep -v "/opt/homebrew/opt/php" | tr "\n" ":")" && php -v'
+alias php84='export PATH="/opt/homebrew/opt/php/bin/:$(echo $PATH | tr ":" "\n" | grep -v "/opt/homebrew/opt/php" | tr "\n" ":")" && php -v'
+
+
+alias awsm="aws sso login --sso-session msipenko"
+alias awssa='export AWS_PROFILE=$(aws configure list-profiles | grep -v '^default$' | fzf --height=10 --border --prompt="Select AWS Profile: ") && echo "AWS_PROFILE set to $AWS_PROFILE"'
+alias awsla="aws configure list-profiles"
+alias ecrp="aws ecr get-login-password --region us-east-2 --profile Production-EngineerAccess | docker login --username AWS --password-stdin 130525269254.dkr.ecr.us-east-2.amazonaws.com"
+
+alias_eks_login() {
+  if [ -z "$1" ]; then
+    echo "Usage: ekslogin <cluster-name>"
+    return 1
+  fi
+  aws eks update-kubeconfig --region us-east-2 --name "$1"
+}
+alias eksl=alias_eks_login
+alias k=kubectl
