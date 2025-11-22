@@ -145,11 +145,11 @@
 		".DS_Store"
 	],
 	"find_selected_text": true,
+	// "font_face": "JetBrains Mono NL",
 	"font_size": 14,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Open-Include",
 		"Vintage",
 	],
 	"index_exclude_patterns":
@@ -173,4 +173,6 @@
 	"trim_trailing_white_space_on_save": true,
 	"wide_caret": false,
 	"index_exclude_gitignore": false,
+	"enable_hexadecimal_encoding": true,
+	"index_files": false,
 }
