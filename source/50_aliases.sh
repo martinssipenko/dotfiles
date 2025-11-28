@@ -45,13 +45,6 @@ alias sudo='sudo '
 # Get week number
 alias week='date +%V'
 
-# Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
-
-# Google Chrome
-alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
-
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
@@ -92,7 +85,6 @@ alias php82='export PATH="/opt/homebrew/opt/php@8.2/bin/:$(echo $PATH | tr ":" "
 alias php83='export PATH="/opt/homebrew/opt/php@8.3/bin/:$(echo $PATH | tr ":" "\n" | grep -v "/opt/homebrew/opt/php" | tr "\n" ":")" && php -v'
 alias php84='export PATH="/opt/homebrew/opt/php/bin/:$(echo $PATH | tr ":" "\n" | grep -v "/opt/homebrew/opt/php" | tr "\n" ":")" && php -v'
 
-
 alias awsm="aws sso login --sso-session msipenko"
 alias awssa='export AWS_PROFILE=$(aws configure list-profiles | grep -v '^default$' | fzf --height=10 --border --prompt="Select AWS Profile: ") && echo "AWS_PROFILE set to $AWS_PROFILE"'
 alias awsla="aws configure list-profiles"
@@ -105,5 +97,6 @@ alias_eks_login() {
   fi
   aws eks update-kubeconfig --region us-east-2 --name "$1"
 }
+
 alias eksl=alias_eks_login
 alias k=kubectl
